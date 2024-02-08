@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 2000px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: #eddcd9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #264143;
+    border-radius: 10px;
+}
+
+/* -- background text code start here --  */
+h1#background-text {
+    color: #eddcd9;
+    text-shadow: 0px 0px 10px #fdb6aa;
+    font-size: 20vw;
+    position: absolute;
+    top: 3%;
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+h1#background-text::selection {
+    display: none;
+}
+
+/* -- background text code end here --  */
+/* -- landingPage code start here --  */
+
+.landingPage {
+    background-color: #eddcd9;
+}
+
+/* -- navbar code start here --  */
+.navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    z-index: 2;
+}
+
+.navbar .logoText {
+    color: #264143;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.navbar .logoText::selection {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #de5499;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    z-index: 4;
+}
+
+.navbar ul li a::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    background-color: #de5499;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.navbar ul a:hover::after {
+    width: 100%;
+}
+
+.contectBtn {
+    padding: 10px;
+    border-radius: 100px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.contectBtn a {
+    color: #264143;
+}
+
+.contectBtn a:hover {
+    color: #e99f4c;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transform: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #02313b;
+    border-radius: 2px;
+}
+
+
+/* -- navbar code ends here --  */
+/* -- landing information page code start here --  */
+.intro_info {
+    height: calc(100vh - 50px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    z-index: 2;
+}
+
+.intro_text h2 {
+    width: fit-content;
+    font-size: 10vw;
+    color: transparent;
+    -webkit-text-stroke: 1px #264143;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 30%, #264146 50%, rgba(255, 255, 255, 0) 20%);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 5s linear infinite;
+
+}
+
+@keyframes back {
+    0% {
+        background-position: 0px 0;
+    }
+
+    100% {
+        background-position: 910px 0px;
+    }
+
+}
+
+.secondline {
+    display: flex;
+    gap: 10px;
+}
+
+.intro_text .stIntor {
+    color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 5vw;
+    -webkit-text-stroke: 1px #de5499;
+}
+
+.intro_text span {
+    color: transparent;
+    align-items: center;
+    -webkit-text-stroke: 0.8px #de5499;
+}
+
+.intro_text h1 {
+    width: fit-content;
+    gap: 10px;
+    display: flex;
+    font-size: 8vw;
+    color: #264146;
+    -webkit-text-stroke: 1px #264146;
+}
+
+.intro_text h1:hover {
+    color: transparent;
+    transition: 0.5s;
+}
+
+.intro_text p {
+    font-size: 2vw;
+    color: #264143;
+}
+
+.intro_text .cv-btns {
+    display: flex;
+    gap: 20px;
+    margin: 50px 30px 0px 0px;
+    justify-content: end;
+}
+
+.intro_text .cv-btns .download-btn,
+.webcv-btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #416a59;
+    font-size: 1.6vw;
+    font-weight: 800;
+    background-color: #264143;
+    transform: rotate(-20deg);
+}
+
+.intro_text .cv-btns .download-btn:hover,
+.webcv-btn:hover {
+    transform: rotate(-0deg);
+    background-color: #e99f4c;
+}
+
+.intro_image {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.intro_image .image {
+    border-radius: 50%;
+    width: 80%;
+    overflow: hidden;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* -- landing information page code end here --  */
+/* -- about page code start here --  */
+.about-page {
+    width: 100%;
+    background-color: #eddcd9;
+    overflow: hidden;
+}
+
+.about-page .about-heading,
+.project-heading {
+    font-family: 'Dancing Script', cursive;
+    color: #de5499;
+    padding: 5px;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.about-page .about-contenre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.about-contenre .about-image {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+}
+
+.about-image .image {
+    width: 30%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.about-image .self-text {
+    font-size: 2vw;
+    padding: 30px;
+    color: #264146;
+}
+
+.about-image .social-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.links {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.linkshow {
+    opacity: 1;
+    transform: translateX(0%) rotate(20deg);
+}
+
+.about-image .social-links .links {
+    padding: 15px;
+    display: inline-flex;
+    place-content: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.212);
+    box-shadow: 0px 0px 3px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links .links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(97, 97, 97, 0.445);
+    transform: skewX(45deg) translateX(-100px);
+    transition: 2s;
+    animation: shine 1s linear infinite;
+}
+
+.social-links .links:hover::before {
+    transform: skewX(45deg) translateX(150px);
+}
+
+.social-links .links ion-icon {
+    height: 4vh;
+    width: 3vw;
+}
+
+.social-links .links:nth-child(1) ion-icon {
+    color: rgb(0, 183, 255);
+}
+
+.social-links .links:nth-child(2) ion-icon {
+    color: black;
+}
+
+.social-links .links:nth-child(3) ion-icon {
+    color: #de5499;
+}
+
+.about-contenre .about-text {
+    height: calc(100vh - 9.5vh);
+    display: flex;
+    gap: 20px;
+}
+
+.about-text .about-varticalruler {
+    height: 100%;
+    width: 2px;
+    background-color: #264143;
+    transition: all 1.5s;
+    position: relative;
+}
+
+.about-text .cards-contener {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.about-text .cards {
+    padding: 20px;
+    border-radius: 20px;
+    height: fit-content;
+    background-color: #fad8d2;
+    position: relative;
+    line-height: 25px;
+    box-shadow: 0px 0px 10px rgb(134, 134, 134);
+    transition: all 2s;
+}
+
+.about-text .cards h1,
+h5 {
+    font-family: 'Dancing Script', cursive;
+    color: #264146;
+}
+
+.about-text .cards h5 {
+    font-size: large;
+}
+
+.about-text .cards p {
+    color: #264143;
+}
+
+.about-text .education span svg {
+    margin-top: 20px;
+}
+
+.about-text .cards::before {
+    content: "";
+    position: absolute;
+    left: -2%;
+    top: 47%;
+    height: 20px;
+    width: 20px;
+    background-color: #e99f4c;
+    border-radius: 50%;
+    outline: 5px solid #264143;
+}
+
+.cards {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+/* -- about page code ends here --  */
+/* -- project page code start here -- */
+
+.project-page {
+    background-color: #eddcd9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show_all {
+    color: #264143;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.project-content {
+    height: 90vh;
+    width: 90vw;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+.main-card {
+    margin: 20px;
+    height: 4vh;
+    width: 25vw;
+    border: 2px solid #264143;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-card h3 {
+    text-align: center;
+    color: #264146;
+}
+
+.main-card .card_img {
+    height: 50%;
+    width: 50%;
+    opacity: 0;
+    transition: all 1.5s;
+    filter: drop-shadow(4px 4px 10px #264143);
+}
+
+
+.main-card:hover {
+    height: 35vh;
+    transition: all 2s;
+}
+
+.main-card:hover .card_img {
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.main-card .card_text {
+    text-align: center;
+}
+
+.card_text a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_text a:hover {
+    color: #264143;
+}
+
+.card_text a:visited {
+    color: #264143;
+    text-decoration: none;
+}
+
+.card_btn {
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: #e99f4c;
+    width: 50%;
+    padding: 10px;
+    background-color: #264143;
+    border-radius: 2rem;
+}
+
+.card_btn:hover {
+    background-color: #e99f4c;
+    color: #264143;
+}
+
+.main-card:nth-child(1) {
+    position: absolute;
+}
+
+.main-card:nth-child(2) {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.main-card:nth-child(3) {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.main-card:nth-child(5) {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+/* -- projectpage code ends here -- */
+/* --contect page code start here --  */
+
+.contect-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_contener {
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.login_contener .login_dsigen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_contener .login_dsigen,
+.login_dsigen2 {
+    height: 100%;
+    width: 50%;
+    background-color: #264143;
+    border-radius: 2rem;
+
+}
+
+.login_dsigen form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.login_dsigen form h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e99f4c;
+}
+
+.login_dsigen form input {
+    height: 50px;
+    border-radius: 59px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e99f4c;
+    background-color: #416a59;
+    border: none;
+}
+
+ .errorText{
+    color: #de5499;
+    margin: -15px 0px 0px 30px;
+    display: none;
+}
+ 
+.errorText.errorsho{
+    display: block;
+}
+.login_dsigen form .inputItem.error{
+    border: 2px solid #f75555;
+}
+
+.login_dsigen form .inputItem.error::placeholder{
+    color: #ff3838;
+}
+
+.login_dsigen form input::placeholder {
+    color: #e99f4c;
+}
+
+.login_dsigen form input:focus {
+    outline: none;
+    color: #264143;
+    background-color: #e99f4c;
+    border: #264143 3px solid;
+}
+
+.login_dsigen form textarea {
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    resize: none;
+    background-color: #416a59;
+    color: #e99f4c;
+}
+
+.login_dsigen form textarea:focus {
+    background-color: #e99f4c;
+    color: #264143;
+}
+
+.login_dsigen form textarea::placeholder {
+    color: #e99f4c;
+}
+
+.login_dsigen form input[type=submit] {
+    background-color: #416a59;
+    color: #e99f4c;
+}
+
+.login_dsigen form input[type=submit]:hover {
+    background-color: #e99f4c;
+    color: #264143;
+    border: #264143 3px solid;
+}
+
+.login_dsigen form textarea:focus {
+    outline: none;
+    border: #264143 3px solid;
+}
+
+.all_links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+}
+
+.all_links {
+    left: 50%;
+    bottom: 35%;
+}
+
+.all_links .social-links {
+    font-size: 1.6rem;
+    padding: 15px;
+    background-color: #264143;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 1s;
+}
+.all_links .social-links a{
+    color: #e99f4c;
+}
+
+.all_links .social-links:hover {
+    transform: scale(1.2);
+}
+
+.login_dsigen2 {
+    background-color: #e99f4c;
+}
+
+.login_dsigen2 p {
+    font-size: 2.8rem;
+    font-weight: 900;
+    padding: 10px 30px;
+    color: #02313b;
+    margin: 30% 2rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+/* -- contact page code ends here --  */
+/* -- footer page code start here --  */
+.footer {
+    overflow: hidden;
+    position: relative;
+}
+
+.footer img {
+    width: 100%;
+    transform: translateY(45%);
+    z-index: 0;
+}
+
+.footer_content {
+    height: fit-content;
+    padding: 20px;
+    width: fit-content;
+    position: absolute;
+    z-index: 9;
+    bottom: 5%;
+    right: 4%;
+}
+
+.footer_content .logoText {
+    color: #e99f4c;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+
+.footer_nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 25px 0px 30px 0px;
+}
+
+.footer_nav a {
+    text-decoration: none;
+    color: #e99f4c;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.footer_nav :hover {
+    transform: translateY(-4px);
+}
+
+.footer_content .social-links-foot {
+    font-size: 1.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links-foot a {
+    color: #e99f4c;
+    transition: all 0.5s;
+}
+
+.social-links-foot a:hover {
+    transform: translateY(-5px);
+}
+
+/* -- footer page code ends here --  */

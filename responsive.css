@@ -1,0 +1,458 @@
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .login_dsigen2 p {
+        font-size: 2.1rem;
+        font-weight: 900;
+        line-height: 3.5rem;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+
+    }
+}
+
+
+
+@media screen and (min-width: 431px) and (max-width: 600px) {
+    h1#background-text {
+        z-index: 0;
+        top: 40%;
+        left: 10%;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .intro_info {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .intro_text {
+        align-items: center;
+        z-index: 0;
+    }
+
+    .intro_text p {
+        font-size: 1.2rem;
+        padding: 10px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .intro_text .cv-btns {
+        margin: 20px;
+    }
+
+    .intro_text .cv-btns .download-btn,
+    .webcv-btn {
+        font-size: 1rem;
+
+    }
+
+    .intro_image .image {
+        width: 40%;
+    }
+
+    .about-page .about-heading,
+    .project-heading {
+        font-size: 3rem;
+    }
+
+    .about-page .about-contenre {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image .image {
+        display: none;
+    }
+
+    .about-image .self-text {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .about-contenre .about-image {
+        gap: 0vw;
+    }
+
+    .about-image .social-links {
+        margin-bottom: 20px;
+    }
+
+    .about-text .cards-contener {
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-text .cards {
+        width: 90%;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .show_all {
+        display: none;
+    }
+
+    .main-card {
+        width: 45vw;
+    }
+
+    .main-card .card_img {
+        width: 38%;
+        height: 38%;
+    }
+
+    .contect-page {
+        height: fit-content;
+    }
+
+    .login_contener {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .login_contener .login_dsigen {
+        padding: 40px;
+        position: relative;
+    }
+
+    .login_contener .login_dsigen,
+    .login_dsigen2 {
+        width: 100%;
+    }
+
+    .login_dsigen form {
+        width: 90%;
+    }
+
+    .all_links {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: -10%;
+        left: 30%;
+    }
+
+    .all_links .social-links {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .footer {
+        height: 30vh;
+        background-color: #e99f4c;
+        position: relative;
+    }
+
+    .footer_content {
+        bottom: 25%;
+        right: 25%;
+    }
+
+    .footer img {
+        position: fixed;
+        bottom: 0%;
+
+    }
+
+    .footer_content .logoText,
+    .social-links-foot a,
+    .footer_nav a {
+        color: #264146;
+    }
+
+    .footer_nav {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    h1#background-text {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        width: 100vw;
+    }
+
+    .navbar .logoText {
+        font-size: 1rem;
+    }
+
+    .navbar .nave_menu li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nave_menu {
+        background-color: #eddcd9;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        top: -500%;
+        right: 0%;
+        transition: 0.3s;
+    }
+
+    .nave_menu.active {
+        right: 0%;
+        top: 90%;
+        height: 60vh;
+
+    }
+
+    .navbar .contectBtn {
+        background-color: #e99f4c;
+        border-radius: none;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        top: calc(0% + 240px);
+        right: 100%;
+        transition: 0.3s;
+
+    }
+
+    .navbar .contectBtn:hover {
+        color: #264146;
+    }
+
+    .contectBtn.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .intro_info {
+        grid-template-columns: 1fr;
+    }
+
+    .intro_text {
+        align-items: center;
+        z-index: 0;
+    }
+
+    .intro_text h2 {
+        font-size: 3rem;
+
+    }
+
+    .intro_text .stIntor {
+        font-size: 2.2rem;
+    }
+
+    .intro_text h1 {
+        font-size: 2.6rem;
+    }
+
+    .intro_text p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .intro_text .cv-btns {
+        margin: 20px;
+    }
+
+    .intro_text .cv-btns .download-btn,
+    .webcv-btn {
+        font-size: 1rem;
+        transform: rotate(0deg);
+    }
+
+    .intro_image {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .about-page .about-heading,
+    .project-heading {
+        font-size: 3rem;
+    }
+
+    .about-page .about-contenre {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image .image {
+        display: none;
+    }
+
+
+    .about-image .self-text {
+        font-size: 1.4rem;
+        padding: 30px;
+        color: #264146;
+        text-align: center;
+    }
+
+    .about-image .social-links {
+        display: none;
+    }
+
+    .about-text .education span svg {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+    .project-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .show_all {
+        display: none;
+    }
+
+    .main-card {
+        width: 100%;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .main-card:nth-child(1) {
+        position: relative;
+    }
+
+    .main-card:nth-child(2) {
+        position: relative;
+    }
+
+    .main-card:nth-child(3) {
+        position: relative;
+    }
+
+    .main-card:nth-child(5) {
+        position: relative;
+    }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+    .contect-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login_contener {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    .login_contener .login_dsigen {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .login_dsigen form h1 {
+        font-size: 2.5rem;
+    }
+
+    .login_dsigen form {
+        width: 90%;
+    }
+
+    .login_contener .login_dsigen2 {
+        display: none;
+
+    }
+
+    .all_links {
+        display: flex;
+        flex-direction: row;
+        left: 23%;
+        bottom: -9%;
+    }
+
+    .all_links .social-links {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .footer {
+        height: 30vh;
+        background-color: #e99f4c;
+        position: relative;
+    }
+
+    .footer_content {
+        bottom: 25%;
+        right: 15%;
+    }
+
+    .footer img {
+        position: fixed;
+        bottom: 0%;
+
+    }
+
+    .footer_content .logoText,
+    .social-links-foot a,
+    .footer_nav a {
+        color: #264146;
+    }
+
+    .footer_nav {
+        padding: 10px;
+    }
+}
