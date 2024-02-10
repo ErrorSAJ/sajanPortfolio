@@ -153,7 +153,7 @@ form.addEventListener("submit", (e) => {
             Host: "smtp.gmail.com",
             Username: "ersajan123@gmail.com",
             Password: "jxjxemmgyycsbamh",
-            To: [`${Mail.value}`],
+            To: `${Mail.value}`,
             From: "ersajan123@gmail.com",
             Subject: "Your porfolio message",
             Body: msgBody
