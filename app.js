@@ -148,12 +148,12 @@ form.addEventListener("submit", (e) => {
     const msgBody = `Name:${Name.value},<br> Phone No:${phoneno.value},<br> Email:${Mail.value},<br>Message:${Msagess.value}`;
     checkInputtext();
     if (!Name.classList.contains('error') && !Mail.classList.contains('error') && !phoneno.classList.contains('error') && !Msagess.classList.contains('error')) {
-        
+        console.log("mail sending")
         Email.send({
-            Host: "smtp.elasticemail.com",
+            Host: "smtp.gmail.com",
             Username: "ersajan123@gmail.com",
-            Password: "09B0DBD46CB79B3EC0D66DC8BB3E836DC3BA",
-            To: 'ersajan123@gmail.com',
+            Password: "jxjxemmgyycsbamh",
+            To: [${Mail.value}],
             From: "ersajan123@gmail.com",
             Subject: "Your porfolio message",
             Body: msgBody
