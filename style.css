@@ -303,7 +303,7 @@ h1#background-text::selection {
 .links {
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .linkshow {
@@ -332,7 +332,7 @@ h1#background-text::selection {
     height: 100%;
     background: rgba(97, 97, 97, 0.445);
     transform: skewX(45deg) translateX(-100px);
-    transition: 2s;
+    transition: 1s;
     animation: shine 1s linear infinite;
 }
 
@@ -367,7 +367,7 @@ h1#background-text::selection {
     height: 100%;
     width: 2px;
     background-color: #264143;
-    transition: all 1.5s;
+    transition: all 1s;
     position: relative;
 }
 
@@ -385,7 +385,7 @@ h1#background-text::selection {
     position: relative;
     line-height: 25px;
     box-shadow: 0px 0px 10px rgb(134, 134, 134);
-    transition: all 2s;
+    transition: all 0.9s;
 }
 
 .about-text .cards h1,
@@ -421,7 +421,7 @@ h5 {
 .cards {
     opacity: 0;
     transform: translateX(100%);
-    transition: all 1s;
+    transition: all 0.9s;
 }
 
 .show {
@@ -462,7 +462,7 @@ h5 {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    transition: all 2s;
+    transition: all 1s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -477,7 +477,7 @@ h5 {
     height: 50%;
     width: 50%;
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 1s;
     filter: drop-shadow(4px 4px 10px #264143);
 }
 
